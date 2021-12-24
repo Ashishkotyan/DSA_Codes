@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Salary Department</h1>
+
+<script>
+
+        class employes{
+                        constructor(name,age, id,sal){
+                        this.ename= name;
+                        this.eage = age;
+                        this.eid = id;
+                        this.esal= sal;
+                        // document.write("Salaary department :\n"); 
+                    }
+                    
+                        infom(){
+                            document.write(`<h1>Employes salary</h1>
+                            EName : ${this.ename} <br>
+                            Eage  : ${this.eage}<br>
+                            Eid   : ${this.eid}<br>
+                            Esal   : ${this.esal}<br>
+                            `); }
+        }
+        class Manager extends employes{
+                       
+            
+                       infom(){
+                        // super.infom();
+                            let travel = 1500;
+                            let pa     =2200;
+                            let insentive =5000;
+                       let totalM = this.esal+ travel + pa+ insentive;
+
+                       document.write(`<h1>Manager salary</h1>
+                            M=Name : ${this.ename} <br>
+                            M=age  : ${this.eage}<br>
+                            M=salary  : ${totalM}<br>
+                             ${this.esal}`)}
+
+                       }
+                       
+                       var  E = new employes("ashu",19,005,2500)
+                       var E2 = new employes("nitish",22,9008,1500);
+                    var M = new Manager("asgu",28,200,30000);
+                    var M2 = new Manager("")
+
+
+                    
+                    
+                E.infom();
+                E2.infom();
+                M.infom();
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
