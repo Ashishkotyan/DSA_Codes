@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern js ECMA6</title>
+</head>
+<body>
+    
+<!-- 
+let vs var 
+let use in only  block scope 
+var use in in full file   -->
+
+
+    <script>
+
+function bioData(){
+    var myname = "hello name ashu";
+    console.log(myname);
+
+    if(true)
+    {
+        var mylname = "bye ashu";
+
+        console.log("inner " + mylname);
+        console.log("inner " + myname);
+    }
+    console.log("outer " + mylname);
+}
+
+bioData();
+
+
+
+
+// 2 =>// template literal (template strings)
+
+for(let num=1;num<=10;num++)
+{
+    let tableof =120;
+    // console.log(tableof + " * " + num + " = " +tableof * num);
+
+
+    console.log(`${tableof} * ${num} = ${tableof * num}`);
+}
+//  3 Default parameters
+
+function multi(a=2,b=5)
+{
+    return a*b;
+}
+
+console.log(multi(40));
+
+// 4 fat arrow function 
+const sum = () => {
+let a=34; b=76;
+let sum = a+b;
+return `the sum of two number is ${sum}`;
+
+
+}
+console.log(sum());
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
